@@ -1,6 +1,8 @@
 # Latches-and-Flip-Flops
 Generating basic D-Latch, SR-Latch, and flip-flops in SystemVerilog
 
+This project contains the codes in the following order:
+
 1) Generating a clocked **SR-latch** with active low S, R, and Clock inputs, and applying simultaneous active inputs (S and R) and see the loss of memory.
 
 2. Using an inverter to convert the SR latch to a clocked **D-latch**, and simulating this circuit to verify its operation.
