@@ -15,6 +15,8 @@ This project contains the codes in the following order:
 5. Build an 8-bit shift-register using the flip-flop in both a **generate** and **always** statement. I also used a
 testbench to simulate this register and verify its clocking, shifting, and resetting operations.
 
+6. Finally, using the shift register, I designed an LFSR with x8+x7+x6+x3+1 polynomial. 
 
+For this, I numbered shift-register flip-flops from 7 to 0 from left to right. A feedback from output of bit 0 (x0 in the polynomial) connects to the input of bit 7 (x8 in the polynomial). In the polynomial, the coefficient of term (xi) is 1 where flip-flop i output connects to the feedback through an XOR gate. Coefficient of 0 for a term means that the corresponding output does not contribute to the feedback, and the serial output from bit 0 has pseudo-random serial data.
 
 
